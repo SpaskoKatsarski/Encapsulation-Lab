@@ -8,21 +8,29 @@ namespace PersonsInfo
     {
         static void Main(string[] args)
         {
-            var lines = int.Parse(Console.ReadLine());
-            var persons = new List<Person>();
-            for (int i = 0; i < lines; i++)
-            {
-                var cmdArgs = Console.ReadLine().Split();
-                var person = new Person(cmdArgs[0],
-                                        cmdArgs[1],
-                                        int.Parse(cmdArgs[2]),
-                                        decimal.Parse(cmdArgs[3]));
+            //Person person1 = new Person("Spasko", "Katsarski", 16, 2000);
+            //Person person2 = new Person("Ivan", "ADAD", 46, 2000);
+            //Person person3 = new Person("Gosho", "GDG", 30, 2000);
+            //Person person4 = new Person("Dancho", "SSSS", 40, 2000);
+            //Person person5 = new Person("Petko", "FAMILY", 12, 2000);
 
-                persons.Add(person);
-            }
-            var parcentage = decimal.Parse(Console.ReadLine());
-            persons.ForEach(p => p.IncreaseSalary(parcentage));
-            persons.ForEach(p => Console.WriteLine(p.ToString()));
+            //List<Person> persons = new List<Person>();
+
+            //persons.Add(person1);
+            //persons.Add(person2);
+            //persons.Add(person3);
+            //persons.Add(person4);
+            //persons.Add(person5);
+
+            //Team team = new Team("SoftUni");
+
+            //foreach (Person person in persons)
+            //{
+            //    team.AddPlayer(person);
+            //}
+
+            //Console.WriteLine(team.FirstTeam.Count);
+            //Console.WriteLine(team.ReserveTeam.Count);
         }
     }
 }
